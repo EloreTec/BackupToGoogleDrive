@@ -1,4 +1,4 @@
-# Backup to Google Drive
+# Backup to Google Drive CLI
 
 ## Usage
 
