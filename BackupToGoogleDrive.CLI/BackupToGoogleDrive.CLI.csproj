@@ -18,9 +18,6 @@
     <None Update="service-account-credential.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="service-account-credential.override.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
   <PropertyGroup>

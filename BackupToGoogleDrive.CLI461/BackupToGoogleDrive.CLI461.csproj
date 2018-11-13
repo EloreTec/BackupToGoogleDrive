@@ -99,9 +99,6 @@
     <None Include="service-account-credential.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Include="service-account-credential.override.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BackupToGoogleDrive.Core\BackupToGoogleDrive.Core.csproj">
