@@ -2,7 +2,7 @@
 
 ## Usage
 
-Upload
+### Upload
 
 ```
 bkp-gdrive-cli.exe upload -s [shared-folder] -f "[file]"
@@ -26,7 +26,7 @@ bkp-gdrive-cli.exe upload -s [shared-folder] -f "[file]"
 
 -------------------
 
-Purge
+### Purge
 
 ```
 bkp-gdrive-cli.exe upload -s [shared-folder] -d [days]
