@@ -3,7 +3,6 @@
 ## Usage
 
 Upload
------------
 
 ```
 bkp-gdrive-cli.exe upload -s [shared-folder] -f "[file]"
@@ -23,11 +22,13 @@ bkp-gdrive-cli.exe upload -s [shared-folder] -f "[file]"
 
   -n, --aplication-name                    (Default: Backup to Google Drive)
                                            Set application name.
-
 ```
 
+-------------------
+
 Purge
-------------
+
+```
 bkp-gdrive-cli.exe upload -s [shared-folder] -d [days]
 
   -s, --shared-folder                      Required. Set shared folder to purge
@@ -50,3 +51,4 @@ bkp-gdrive-cli.exe upload -s [shared-folder] -d [days]
   --help                                   Display this help screen.
 
   --version                                Display version information.
+```
