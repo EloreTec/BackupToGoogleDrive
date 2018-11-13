@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <AssemblyName>bkp-gdrive-cli</AssemblyName>
+    <RuntimeFrameworkVersion>2.1.1</RuntimeFrameworkVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.3.0" />
+    <PackageReference Include="Google.Apis.Drive.v3" Version="1.36.1.1400" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="service-account-credential.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="service-account-credential.override.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NestedBuild>$(TargetDir)\nestedBuild\</NestedBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <BootStrapFiles Include="$(NestedBuild)hostpolicy.dll;$(NestedBuild)$(AssemblyName).exe;$(NestedBuild)hostfxr.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BackupToGoogleDrive.Core\BackupToGoogleDrive.Core.csproj" />
+  </ItemGroup>
+  <Target Name="GenerateNetcoreExe" AfterTargets="Build" Condition="$(IsNestedBuild) != true">
+    <RemoveDir Directories="$(NestedBuild)" />
+    <Exec ConsoleToMSBuild="true" Command="dotnet build $(ProjectPath) --configuration $(Configuration) --runtime win-x64 --output $(NestedBuild) /p:CopyLocalLockFileAssemblies=false;IsNestedBuild=true">
+      <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
+    </Exec>
+    <Copy SourceFiles="@(BootStrapFiles)" DestinationFolder="$(OutputPath)" />
+    <RemoveDir Directories="$(NestedBuild)" />
+  </Target>
+</Project>
