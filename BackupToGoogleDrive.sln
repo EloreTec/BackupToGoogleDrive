@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2018
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupToGoogleDrive.CLI", "BackupToGoogleDrive.CLI\BackupToGoogleDrive.CLI.csproj", "{E57C0EA9-8EA9-4AD4-849C-DF78C4A263EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackupToGoogleDrive.Core", "BackupToGoogleDrive.Core\BackupToGoogleDrive.Core.csproj", "{14BEE863-DE57-4ADC-B649-FF65478658FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupToGoogleDrive.CLI461", "BackupToGoogleDrive.CLI461\BackupToGoogleDrive.CLI461.csproj", "{89DCC81E-A255-4A00-8019-695B40DF1276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E57C0EA9-8EA9-4AD4-849C-DF78C4A263EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57C0EA9-8EA9-4AD4-849C-DF78C4A263EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57C0EA9-8EA9-4AD4-849C-DF78C4A263EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57C0EA9-8EA9-4AD4-849C-DF78C4A263EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14BEE863-DE57-4ADC-B649-FF65478658FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14BEE863-DE57-4ADC-B649-FF65478658FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14BEE863-DE57-4ADC-B649-FF65478658FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14BEE863-DE57-4ADC-B649-FF65478658FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89DCC81E-A255-4A00-8019-695B40DF1276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89DCC81E-A255-4A00-8019-695B40DF1276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89DCC81E-A255-4A00-8019-695B40DF1276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89DCC81E-A255-4A00-8019-695B40DF1276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {020CB829-9B1C-468D-BCB7-4A7F015B7DE2}
+	EndGlobalSection
+EndGlobal
