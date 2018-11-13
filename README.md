@@ -7,8 +7,8 @@
   - bkp-gdrive-cli.zip to .NET Core 2.1.1 or newest
 - Create new project in http://console.developers.google.com
 - Enable Google API
-- Create service account credential
-- Download service account credential json file (renamed service-account-credential.json) in dist folder
+- Create service account credentials
+- Download service account credentials json file (renamed service-account-credential.json) in dist folder
 - Execute commands
 
 ### Upload
@@ -40,7 +40,7 @@
 
 ```
 [4.6.1] bkp-gdrive-cli.exe upload -s [shared-folder] -d [days]
-[core] dotnet bkp-gdrive-cli.dll upload -s [shared-folder] -d [days]
+[core]  dotnet bkp-gdrive-cli.dll upload -s [shared-folder] -d [days]
 
   -s, --shared-folder                      Required. Set shared folder to purge
                                            files in Google Drive.
